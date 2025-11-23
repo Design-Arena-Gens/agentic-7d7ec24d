@@ -1,0 +1,15 @@
+export const metadata = {
+  title: "????? ?????? | Storyboard",
+  description: "????? ???? 12-15 ????? - ????? ??????"
+};
+
+import "./globals.css";
+import React from "react";
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="ar" dir="rtl">
+      <body>{children}</body>
+    </html>
+  );
+}

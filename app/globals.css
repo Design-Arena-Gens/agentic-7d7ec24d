@@ -1,0 +1,19 @@
+/* Global resets and Arabic RTL defaults */
+*,*::before,*::after{ box-sizing: border-box; }
+html{ -webkit-text-size-adjust: 100%; }
+
+:root{
+  color-scheme: dark;
+  --bg:#0b0f14;
+  --fg:#f5f7fa;
+  --muted:#a8b3c7;
+  --accent:#46c2ff;
+  --gold:#ffd277;
+  --success:#60e7a8;
+}
+
+body{ margin:0; direction: rtl; background:var(--bg); color:var(--fg); }
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{ animation: none !important; transition: none !important; }
+}
